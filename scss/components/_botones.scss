@@ -1,0 +1,141 @@
+// BOTONES NAVEGACION
+
+.link-nav {
+    @include button-font-style($color-light, $font-small, $font-regular)
+}
+
+.link-nav:hover {
+    color: $font-color-principal;    
+}
+
+.link-nav-active {    
+    @include button-font-style($font-color-principal, $font-small, $font-bold)    
+}
+
+.btn-nav{            
+    @include button-shape(1, 0.5);   
+}
+
+.btn-nav:hover {
+    background-color: $color-dark;        
+}
+
+.navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-toggler-icon {
+    background-color: $font-color-principal;
+    border: 1px solid $font-color-principal;
+    @include button-shape(1, 0.2); 
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+// BOTONES REDES
+
+.social-media-icons {
+    @include flex(center,null,4rem);    
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;    
+}
+
+i {
+    font-size: 3rem;
+    color: $color-light;
+
+    &:hover{    
+        color: $font-color-principal;    
+    }
+}
+
+// BOTONES DESCARGA
+
+.download {
+    &-banner {
+        @include flex(center,center,null);        
+        height: 7rem;
+        background-color: $color-dark;    
+    }
+
+    &-text-banner p {
+        @include button-font-style($font-color-principal, $font-medium, $font-bolder);        
+        margin-bottom: 0;
+    }
+
+    &-banner .btn-group {
+        padding-left: 3rem;
+        gap: 1.1rem;
+    }
+}
+
+.btn {
+    &-group i {
+        font-size: $font-large;
+    }
+
+    & i.fa-brands {
+        color: $color-dark;
+    }
+
+    &-secondary {
+        @include button-style($color-light, transparent);
+        
+    
+        &:hover {
+            @include button-style($font-color-principal, transparent)
+        }
+    }
+}
+
+// BOTONES STORE
+
+.btn-buy {
+    background-color: $color-medium;
+    color: $font-color-principal;
+    font-size: $font-xs;
+    border: none;    
+}
+
+.btn-buy:hover {
+    background-color: $color-pop;
+    color: $font-color-principal;
+}
+
+// SEARCH BAR
+
+.search-bar-container{
+    padding-left: 2rem;
+}
+
+.btn-outline-success {
+    border: none;
+
+    & i.fa-magnifying-glass {
+        font-size: $font-small;
+    }
+
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+// BOTON SORT BY
+
+.sort-by {
+    padding-right: 2rem;
+}
+
+.btn-group .btn-primary {
+    background-color: $font-color-principal;
+    color: #44496a;
+    border: none;    
+}
+
+.dropdown-item {
+    font-size: $font-xs;    
+}

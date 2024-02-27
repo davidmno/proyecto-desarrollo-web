@@ -1,0 +1,24 @@
+.card{
+    background-color: transparent;
+    border: none;
+
+    img {
+        background-image: linear-gradient(to bottom, transparent, #dddddd);
+        border-radius: 1rem;
+    }
+
+    &-buy {
+        @include flex(center,center,1rem);
+        padding: 1rem 0;
+    }
+
+    &-title {
+        @include button-font-style(#484848,$font-small,$font-bold);        
+        text-align: center;
+    }
+    
+    &-text {
+        @include button-font-style($color-pop,$font-small,$font-bold);    
+        margin-bottom: 0;    
+    }
+}

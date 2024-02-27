@@ -1,0 +1,16 @@
+
+footer {
+    padding: 2rem 1.5rem 0;
+}
+
+.menu-footer {
+    @include text-font-style($font-small, $font-thin);
+    @include flex(center,null,3rem);
+    padding: 2rem;    
+}
+
+.copyright p {
+    @include button-font-style($color-light, $font-xs, $font-thin);    
+    @include flex(center,null,3rem);
+    padding: 1.5rem 0 3rem;    
+}

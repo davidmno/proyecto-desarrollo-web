@@ -1,0 +1,45 @@
+.expansions {    
+    & h2{
+        font-size: $font-xl;
+        text-align: center;
+        padding: 10rem 0 5rem;
+        margin: 0;
+    }
+
+    & .row {
+        padding: 2.5rem 0;
+    }
+}
+
+.cover img {
+    height: 44rem;
+}
+
+.expansion{
+    &-content h3 {
+        @include text-font-style($font-large,$font-bolder)    
+    }
+    
+    &-content p {
+        @include text-font-style($font-small,$font-thin);
+        margin: 0;       
+    }
+    
+    &-content .main-text{
+        padding: 2rem;
+    }
+    
+    &-container {
+        border-top: 2px solid $color-medium;
+    } 
+}
+
+.youtube {
+    padding: 2rem 0;
+
+    &-video{
+        aspect-ratio: 16 / 9;
+        width: 100%;
+    }
+}
+

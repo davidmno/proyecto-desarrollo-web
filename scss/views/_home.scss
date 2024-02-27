@@ -1,0 +1,40 @@
+.news {    
+    &-container{
+    text-align: center;
+    padding-top: 5rem;
+    margin-right: 0;
+    }
+
+    &-text h2{
+        @include text-font-style($font-huge,$font-bold)    
+    }
+
+    &-button{
+        display: inline-block;
+        max-width: 200px;
+        margin-top: 1.5rem;
+        padding: 1rem 2rem;
+        border: 2px solid $font-color-principal;
+        border-radius: 20px;
+    }
+
+    &-button:hover {
+        background-color: rgba(255, 255, 255, 0.336);    
+    }
+}
+
+.main{
+    &-text-link {    
+        @include text-font-style($font-small,$font-bolder)        
+    }
+    
+    &-section {
+        @include background-img(url("../img/godmaster-background.jpg"),cover,center,100vh)
+    }
+}
+
+
+.youtube-video-news {    
+    width: 100%;
+    padding: 0 5rem;
+}

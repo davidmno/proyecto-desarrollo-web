@@ -1,0 +1,22 @@
+.about {
+    &-container {
+        margin-top: 10rem;   
+    }
+
+    &-text {
+        padding: 2rem;    
+    }
+    
+    &-text h2 {
+        @include text-font-style(6rem,$font-bolder)    
+    }
+    
+    &-text p {    
+        @include button-font-style(#a8a8a8,$font-small,$font-regular);
+        margin-top: 5rem;
+    }
+    
+    &-section img {
+        height: 650px;
+    }
+}

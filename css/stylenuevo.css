@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: white;
+}
+
+footer {
+  padding: 2rem 1.5rem 0;
+}
+
+.menu-footer {
+  font-size: 1.4rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.copyright p {
+  color: #d1d1d2;
+  font-size: 1.2rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1.5rem 0 3rem;
+}
+
+h1 {
+  display: none;
+}
+
+.navbar-container {
+  padding: 1.5rem 3rem;
+}
+
+.logo {
+  height: 55px;
+}
+
+.link-nav {
+  color: #d1d1d2;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.link-nav:hover {
+  color: white;
+}
+
+.link-nav-active {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.btn-nav {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.btn-nav:hover {
+  background-color: #18181c;
+}
+
+.navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0.2rem;
+  padding: 1rem;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.link-nav {
+  color: #d1d1d2;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.link-nav:hover {
+  color: white;
+}
+
+.link-nav-active {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.btn-nav {
+  padding: 1;
+  border-radius: 0.5;
+}
+
+.btn-nav:hover {
+  background-color: #18181c;
+}
+
+.navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+  border: 1px solid white;
+  padding: 1;
+  border-radius: 0.2;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+i {
+  font-size: 3rem;
+  color: #d1d1d2;
+}
+i:hover {
+  color: white;
+}
+
+.download-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  background-color: #18181c;
+}
+.download-text-banner p {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.download-banner .btn-group {
+  padding-left: 3rem;
+  gap: 1.1rem;
+}
+
+.btn-group i {
+  font-size: 2.3rem;
+}
+.btn i.fa-brands {
+  color: #18181c;
+}
+.btn-secondary {
+  background-color: #d1d1d2;
+  border-color: transparent;
+}
+.btn-secondary:hover {
+  background-color: white;
+  border-color: transparent;
+}
+
+.btn-buy {
+  background-color: #404044;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.btn-buy:hover {
+  background-color: #5e7318;
+  color: white;
+}
+
+.search-bar-container {
+  padding-left: 2rem;
+}
+
+.btn-outline-success {
+  border: none;
+}
+.btn-outline-success i.fa-magnifying-glass {
+  font-size: 1.4rem;
+}
+.btn-outline-success:hover {
+  background-color: transparent;
+}
+
+.sort-by {
+  padding-right: 2rem;
+}
+
+.btn-group .btn-primary {
+  background-color: white;
+  color: #44496a;
+  border: none;
+}
+
+.dropdown-item {
+  font-size: 1.2rem;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+}
+.card img {
+  background-image: linear-gradient(to bottom, transparent, #dddddd);
+  border-radius: 1rem;
+}
+.card-buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.card-title {
+  color: #484848;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+}
+.card-text {
+  color: #5e7318;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.news-container {
+  text-align: center;
+  padding-top: 5rem;
+  margin-right: 0;
+}
+.news-text h2 {
+  font-size: 5rem;
+  font-weight: 500;
+}
+.news-button {
+  display: inline-block;
+  max-width: 200px;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+.news-button:hover {
+  background-color: rgba(255, 255, 255, 0.336);
+}
+
+.main-text-link {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.main-section {
+  background-image: url("../img/godmaster-background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.youtube-video-news {
+  width: 100%;
+  padding: 0 5rem;
+}
+
+.expansions h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 10rem 0 5rem;
+  margin: 0;
+}
+.expansions .row {
+  padding: 2.5rem 0;
+}
+
+.cover img {
+  height: 44rem;
+}
+
+.expansion-content h3 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.expansion-content p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 0;
+}
+.expansion-content .main-text {
+  padding: 2rem;
+}
+.expansion-container {
+  border-top: 2px solid #404044;
+}
+
+.youtube {
+  padding: 2rem 0;
+}
+.youtube-video {
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+
+.banner {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+.banner h2 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 15rem 0;
+  margin-bottom: 0;
+}
+
+.products-bar {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: #44496a;
+}
+.products-bar.btn-group {
+  padding-right: 2rem;
+}
+.products-grid {
+  padding-top: 2.5rem;
+}
+.products-container {
+  background-color: white;
+  padding-bottom: 5rem;
+  margin: 0;
+}
+
+.search-bar-container {
+  padding-left: 2rem;
+}
+
+.filters {
+  padding-left: 2rem;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  border-color: transparent;
+  padding: 0.5rem 0;
+}
+.list-group h2 {
+  color: #404044;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.form-check-label {
+  color: #404044;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-left: 0.2rem;
+}
+.form-check-input {
+  padding: 0.6rem;
+  border: 0.1rem solid #404044;
+  margin: 0;
+}
+
+.about-container {
+  margin-top: 10rem;
+}
+.about-text {
+  padding: 2rem;
+}
+.about-text h2 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+.about-text p {
+  color: #a8a8a8;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 5rem;
+}
+.about-section img {
+  height: 650px;
+}
+
+.download {
+  background-image: url("../img/poster2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.download-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2rem;
+  border-radius: 1rem;
+  height: 100%;
+  text-align: center;
+}
+.download-text h2 {
+  font-size: 5rem;
+}
+.download-text {
+  margin-bottom: 2rem;
+}
+
+.btn-group-download {
+  display: flex;
+  gap: 2rem;
+}
+.btn-group-download i {
+  font-size: 5rem;
+}
+
+/*# sourceMappingURL=stylenuevo.css.map */

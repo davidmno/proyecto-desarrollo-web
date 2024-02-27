@@ -7,12 +7,12 @@
     <title>Hollow Knight</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/stylenuevo.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-hollow-nav">
+        <nav class="navbar navbar-expand-lg">
             <div class="container navbar-container">
                 <a href="../index.html"><img class="logo" src="../img/logo.png" alt="Hollow Knight logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -21,17 +21,17 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav w-100 justify-content-around text-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/expansions.html">EXPANSIONS</a>
+                        <li class="btn-nav">
+                            <a class="link-nav" href="../pages/expansions.html">EXPANSIONS</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link-active" href="../pages/store.html">STORE</a>
+                        <li class="btn-nav">
+                            <a class="link-nav-active" href="../pages/store.html">STORE</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/about.html">ABOUT</a>
+                        <li class="btn-nav">
+                            <a class="link-nav" href="../pages/about.html">ABOUT</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/download.html">DOWNLOAD</a>
+                        <li class="btn-nav">
+                            <a class="link-nav" href="../pages/download.html">DOWNLOAD</a>
                         </li>
                     </ul>
                 </div>
@@ -41,139 +41,174 @@
 
     <main>
         <div class="banner">
-            <img src="../img/banner.jpg" alt="store banner">
+            <h2>Official Merchandise</h2>
         </div>
 
-        <div class="products-bar">
+        <div class="products-bar d-flex justify-content-between">
             <div class="search-bar">
                 <nav class="navbar">
-                    <div class="container-fluid">
+                    <div class="search-bar-container container-fluid">
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                            <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                     </div>
                 </nav>
             </div>
-
-            <div class="sort-by">
-                <!-- acá iría el código para mi boton de "Ordenar Por" pero no se como se programa -->
-            </div>
-        </div>
-
-        <section class="container-fluid products-container">
-            <article class="row gap-5">
-            <div class="list-group filters col-sm-12 col-md-3 col-lg-2">
-                <ul class="list-group">
-                    <h2>FILTERS</h2>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                        <label class="form-check-label" for="firstCheckbox">Art & Posters</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                        <label class="form-check-label" for="secondCheckbox">Accesories</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                        <label class="form-check-label" for="thirdCheckbox">Books</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckbox">
-                        <label class="form-check-label" for="thirdCheckbox">Clothing</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="fifthCheckbox">
-                        <label class="form-check-label" for="thirdCheckbox">Figurines</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="sixthCheckbox">
-                        <label class="form-check-label" for="thirdCheckbox">Lapel Pins</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="seventhCheckbox">
-                        <label class="form-check-label" for="thirdCheckbox">Music</label>
-                    </li>
+        
+            <div class="sort-by btn-group" role="group">
+                <button type="button" class="btn btn-primary btn-lg dropdown-toggle border-0 rounded-0" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sort By
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+                    <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+                    <li><a class="dropdown-item" href="#">Name: A-Z</a></li>
+                    <li><a class="dropdown-item" href="#">Name: Z-A</a></li>
+                    <li><a class="dropdown-item" href="#">Oldest</a></li>
+                    <li><a class="dropdown-item" href="#">Newest</a></li>                  
                 </ul>
             </div>
-                    <div class="card col-sm-12 col-md-4 col-lg-3">
-                        <img src="../img/collection.png" alt="Collector's edition">
-                        <div class="card-body">
-                            <h3 class="card-title">Hollow Knight Collector's Edition</h3>
-                            <p class="card-text">$99</p>
-                            <a href="#" class="btn btn-primary">Buy</a>
+        </div>    
+        
+        <section class="container-fluid products-container">
+            <article class="products row gap-5">
+                    <div class="products-grid row">
+                        <div class="filters col-sm-3">
+                            <ul class="list-group">
+                            <h2>FILTERS</h2>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                <label class="form-check-label" for="firstCheckbox">Art & Posters</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                <label class="form-check-label" for="secondCheckbox">Accesories</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                <label class="form-check-label" for="thirdCheckbox">Books</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckbox">
+                                <label class="form-check-label" for="thirdCheckbox">Clothing</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="fifthCheckbox">
+                                <label class="form-check-label" for="thirdCheckbox">Figurines</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="sixthCheckbox">
+                                <label class="form-check-label" for="thirdCheckbox">Lapel Pins</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="seventhCheckbox">
+                                <label class="form-check-label" for="thirdCheckbox">Music</label>
+                            </li>
+                            </ul>
                         </div>
-                    </div>
+                        <div class="col-sm-9">
+                            <div class="row">
+                                <div class="card col-sm-12 col-md-6 col-lg-4">
+                                    <img src="../img/collection.png" alt="Collector's edition">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Hollow Knight Collector's Edition</h3>
+                                        <div class="card-buy">
+                                            <p class="card-text">$99</p>
+                                            <a href="#" class="btn btn-buy">ADD TO CART</a>
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <div class="card col-sm-12 col-md-4 col-lg-3">
-                        <img src="../img/journal.png" alt="Journal">
-                        <div class="card-body">
-                            <h3 class="card-title">Wanderer's Journal</h3>
-                            <p class="card-text">$99</p>
-                            <a href="#" class="btn btn-primary">Buy</a>
-                        </div>
-                    </div>
+                                <div class="card col-sm-12 col-md-6 col-lg-4">
+                                    <img src="../img/journal.png" alt="Journal">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Wanderer's Journal</h3>
+                                        <div class="card-buy">
+                                            <p class="card-text">$99</p>
+                                            <a href="#" class="btn btn-buy">ADD TO CART</a>
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <div class="card col-sm-12 col-md-4 col-lg-3">
-                        <img src="../img/cd.png" alt="CD">
-                        <div class="card-body">
-                            <h3 class="card-title">Hollow Knight Piano Collections CD Artbook</h3>
-                            <p class="card-text">$99</p>
-                            <a href="#" class="btn btn-primary">Buy</a>
-                        </div>
-                    </div>
-
-                    <div class="card col-sm-12 col-md-4 col-lg-3">
-                        <img src="../img/tshirt.png" alt="T-Shirt">
-                        <div class="card-body">
-                            <h3 class="card-title">Nimble Protector T-Shirt</h3>
-                            <p class="card-text">$99</p>
-                            <a href="#" class="btn btn-primary">Buy</a>
-                        </div>
-                    </div>
-
-                    <div class="card col-sm-12 col-md-4 col-lg-3">
-                        <img src="../img/long-sleeve.png" alt="Long-Sleeve Shirt">
-                        <div class="card-body">
-                            <h3 class="card-title">Kindred Souls Long-Sleeved Shirt</h3>
-                            <p class="card-text">$99</p>
-                            <a href="#" class="btn btn-primary">Buy</a>
-                        </div>
-                    </div>
-
-                    <div class="card col-sm-12 col-md-4 col-lg-3">
-                        <img src="../img/tote.png" alt="Tote Bag">
-                        <div class="card-body">
-                            <h3 class="card-title">Relic Seeker's Tote Bag</h3>
-                            <p class="card-text">$99</p>
-                            <a href="#" class="btn btn-primary">Buy</a>
-                        </div>
-                    </div>
-
-                    <div class="card col-sm-12 col-md-4 col-lg-3">
-                        <img src="../img/pin.png" alt="Pin">
-                        <div class="card-body">
-                            <h3 class="card-title">The Knight Pin Pack</h3>
-                            <p class="card-text">$99</p>
-                            <a href="#" class="btn btn-primary">Buy</a>
-                        </div>
-                    </div>
-
-                    <div class="card col-sm-12 col-md-4 col-lg-3">
-                        <img src="../img/set.png" alt="Stationery Set">
-                        <div class="card-body">
-                            <h3 class="card-title">Hollow Knight Stationery Set</h3>
-                            <p class="card-text">$99</p>
-                            <a href="#" class="btn btn-primary">Buy</a>
-                        </div>
-                    </div>
-
-                    <div class="card col-sm-12 col-md-4 col-lg-3">
-                        <img src="../img/statue.png" alt="Figurine">
-                        <div class="card-body">
-                            <h3 class="card-title">The Knight Resin Statue</h3>
-                            <p class="card-text">$99</p>
-                            <a href="#" class="btn btn-primary">Buy</a>
+                                <div class="card col-sm-12 col-md-6 col-lg-4">
+                                    <img src="../img/cd.png" alt="CD">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Hollow Knight Piano Collections CD</h3>
+                                        <div class="card-buy">
+                                            <p class="card-text">$99</p>
+                                            <a href="#" class="btn btn-buy">ADD TO CART</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card col-sm-12 col-md-6 col-lg-4">
+                                    <img src="../img/tshirt.png" alt="T-Shirt">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Nimble Protector T-Shirt</h3>
+                                        <div class="card-buy">
+                                            <p class="card-text">$99</p>
+                                            <a href="#" class="btn btn-buy">ADD TO CART</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card col-sm-12 col-md-6 col-lg-4">
+                                    <img src="../img/long-sleeve.png" alt="Long-Sleeve Shirt">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Kindred Souls Long-Sleeved Shirt</h3>
+                                        <div class="card-buy">
+                                            <p class="card-text">$99</p>
+                                            <a href="#" class="btn btn-buy">ADD TO CART</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card col-sm-12 col-md-6 col-lg-4">
+                                    <img src="../img/tote.png" alt="Tote Bag">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Relic Seeker's Tote Bag</h3>
+                                        <div class="card-buy">
+                                            <p class="card-text">$99</p>
+                                            <a href="#" class="btn btn-buy">ADD TO CART</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card col-sm-12 col-md-6 col-lg-4">
+                                    <img src="../img/pin.png" alt="Pin">
+                                    <div class="card-body">
+                                        <h3 class="card-title">The Knight Pin Pack</h3>
+                                        <div class="card-buy">
+                                            <p class="card-text">$99</p>
+                                            <a href="#" class="btn btn-buy">ADD TO CART</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card col-sm-12 col-md-6 col-lg-4">
+                                    <img src="../img/set.png" alt="Stationery Set">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Hollow Knight Stationery Set</h3>
+                                        <div class="card-buy">
+                                            <p class="card-text">$99</p>
+                                            <a href="#" class="btn btn-buy">ADD TO CART</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card col-sm-12 col-md-6 col-lg-4">
+                                    <img src="../img/statue.png" alt="Figurine">
+                                    <div class="card-body">
+                                        <h3 class="card-title">The Knight Resin Statue</h3>
+                                        <div class="card-buy">
+                                            <p class="card-text">$99</p>
+                                            <a href="#" class="btn btn-buy">ADD TO CART</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
             </article>

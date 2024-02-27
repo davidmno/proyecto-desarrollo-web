@@ -1,0 +1,64 @@
+.banner {
+    @include background-img(url("../img/banner.jpg"),cover,center,auto);
+
+    & h2{
+        font-size: $font-huge;
+        text-align: center;
+        padding: 15rem 0;
+        margin-bottom: 0;    
+    }
+}
+
+.products {
+    &-bar {
+        @include flex(null,center,null);                
+        height: 50px;
+        background-color: #44496a;
+
+        &.btn-group{
+            padding-right: 2rem;
+        }
+    }
+
+    &-grid{
+        padding-top: 2.5rem;
+    }
+
+    &-container {
+        background-color: $font-color-principal;    
+        padding-bottom: 5rem;
+        margin: 0;
+    }
+}
+
+.search-bar-container{
+    padding-left: 2rem;
+}
+
+.filters {
+    padding-left: 2rem;
+}
+
+.list-group{
+    &-item {
+        @include flex(null,center,null);                
+        border-color: transparent;
+        padding: 0.5rem 0;
+    }
+
+    h2 {
+        @include button-font-style($color-medium,$font-medium,$font-bolder)    
+    }
+}
+.form-check {
+    &-label {    
+        @include button-font-style($color-medium,$font-small,$font-thin);
+        margin-left: 0.2rem;
+    }
+    
+    &-input{
+        padding: 0.6rem;
+        border: 0.1rem solid $color-medium;
+        margin: 0;    
+    }
+}

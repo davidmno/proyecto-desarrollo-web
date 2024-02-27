@@ -1,0 +1,18 @@
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./base/reset";
+@import "./base/body";
+@import "./base/footer";
+@import "./components/navbar";
+@import "./components/botones";
+@import "./components/cards";
+@import "./base/tipografias";
+
+
+//views
+
+@import "./views/home";
+@import "./views/expansions";
+@import "./views/store";
+@import "./views/about";
+@import "./views/download";
