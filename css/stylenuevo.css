@@ -241,6 +241,17 @@ i:hover {
   background-image: linear-gradient(to bottom, transparent, #dddddd);
   border-radius: 1rem;
 }
+
+.card img{
+  position: relative;
+  top: 0;
+  transition: top ease 0.3s;
+}
+  
+.card img:hover{
+  top: -2rem;
+}
+
 .card-buy {
   display: flex;
   justify-content: center;
